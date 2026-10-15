@@ -1,0 +1,34 @@
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: placement-portal
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: placement-portal
+  template:
+    metadata:
+      labels:
+        app: placement-portal
+    spec:
+      containers:
+        - name: placement-portal
+          image: kaniha4/student-placement-portal:v1
+          ports:
+            - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: placement-portal-service
+spec:
+  type: NodePort
+  selector:
+    app: placement-portal
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 30014
+```
