@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Placement Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+        header {
+            background: #17365d;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+        nav {
+            background: #24527a;
+            text-align: center;
+            padding: 12px;
+        }
+        nav a {
+            color: white;
+            margin: 12px;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 25px auto;
+            padding: 15px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 18px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px #d1d5db;
+        }
+        h2 {
+            color: #24527a;
+        }
+        .stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .stat {
+            flex: 1;
+            min-width: 150px;
+            background: #e0ecf7;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        footer {
+            background: #17365d;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Student Placement Portal</h1>
+        <p>Your Gateway to Career Opportunities</p>
+    </header>
+
+    <nav>
+        <a href="#profile">Student Profiles</a>
+        <a href="#statistics">Statistics</a>
+        <a href="#companies">Companies</a>
+        <a href="#drives">Recruitment Drives</a>
+    </nav>
+
+    <div class="container">
+        <section class="card" id="profile">
+            <h2>Student Profile</h2>
+            <p><b>Name:</b> Arun Kumar</p>
+            <p><b>Department:</b> Computer Science and Engineering</p>
+            <p><b>Skills:</b> Python, Java, SQL</p>
+            <p><b>Eligibility:</b> Final-year students with a minimum CGPA of 7.0</p>
+        </section>
+
+        <section class="card" id="statistics">
+            <h2>Placement Statistics</h2>
+            <div class="stats">
+                <div class="stat">
+                    <h3>850</h3>
+                    <p>Students Placed</p>
+                </div>
+                <div class="stat">
+                    <h3>120</h3>
+                    <p>Recruiting Companies</p>
+                </div>
+                <div class="stat">
+                    <h3>12 LPA</h3>
+                    <p>Highest Package</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card" id="companies">
+            <h2>Company Information</h2>
+            <p><b>Infosys:</b> Software development and IT services.</p>
+            <p><b>TCS:</b> Technology consulting and digital solutions.</p>
+            <p><b>Accenture:</b> Technology, consulting, and engineering services.</p>
+        </section>
+
+        <section class="card" id="drives">
+            <h2>Upcoming Recruitment Drives</h2>
+            <p><b>Infosys:</b> October 25, 2026 — Software Engineer</p>
+            <p><b>TCS:</b> November 5, 2026 — Graduate Trainee</p>
+            <p><b>Accenture:</b> November 12, 2026 — Associate Software Engineer</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>University Placement Cell | Contact: placement@college.edu</p>
+    </footer>
+</body>
+</html>
